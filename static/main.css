@@ -1,0 +1,54 @@
+#content {
+  background-color: rgba(0, 0, 0, 0.6);
+  /*opacity: 0.6;*/
+  z-index: 1;
+  margin-left: 10px;
+  margin-top: 10%;
+  margin-right: 75%;
+  color: #ffffff;
+  min-height: 70%;
+  padding: 10px;
+}
+
+#results {
+  margin: 15% 30% 0 30%;
+  
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+  padding: 10px 5px 10px 5px;
+    text-decoration: none;
+    color: initial;
+}
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(harry.jpg) no-repeat;
+    background-size: cover; 
+}
+
+@media screen and (max-device-width: 800px) {
+    #content {
+      background-color: rgb(0, 0, 0, 0.6);
+      color: #ffffff
+      padding: 10px;
+      margin: 20% 30% 0 30%;
+    }
+    #bgvid {
+        display: none;
+    }
+}

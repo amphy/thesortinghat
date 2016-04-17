@@ -146,7 +146,7 @@ def on_callback():
     except Exception as e:
         print e
     
-    return "handled code: " + code + "<br /> Your house is: " + house
+    return render_template("results.html", house=house)
 
 if __name__ == "__main__":
     app.run()

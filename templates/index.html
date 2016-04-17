@@ -1,10 +1,27 @@
 <html>
-<head>
   <title>The Sorting Hat</title>
-</head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}" />
+<head>
 
+</head>
 <body>
-  <center><h1>The Sorting Hat</h1></center>
-  <a href="{{ url }}">Connect With Instagram</a>
+<video autoplay loop poster="{{ url_for('static', filename='harry.jpg') }}" id="bgvid" muted>
+    <source src="{{ url_for('static', filename='harry.webm') }}" type="video/webm">
+    <source src="{{ url_for('static', filename='harry.mp4') }}" type="video/mp4">
+</video>
+<audio autoplay loop>
+  <source src="{{ url_for('static', filename='harry.mp3') }}" type="audio/mpeg">
+</audio>
+
+<div id="content">
+<center><img src="{{ url_for('static', filename='sortinghat2.png') }}">
+<i>"It is our choices, Harry, that show us who we truly are, far more than our abilities."</i><br>
+-Albus Dumbledore<br /><br />
+<br /><br /><br /><br />
+Welcome to the Sorting Hat. We use your Instagram pictures to sort you into one of the four houses. To get started, connect with Instagram below:
+<br /><br />
+<a href="{{ url }}" class="button">Connect with Instagram</a>
+</center>
+<div>
 </body>
 </html>
